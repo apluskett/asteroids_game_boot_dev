@@ -1,0 +1,6 @@
+# Virtual environments
+venv/
+
+# Python bytecode (generated when you run Python code)
+__pycache__/
+*.pyc
