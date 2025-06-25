@@ -4,9 +4,9 @@ from constants import SCREEN_WIDTH, SCREEN_HEIGHT
 def main():
     print("Starting Asteroids!")
     print(
-        f'''Screen width: {SCREEN_WIDTH} 
+f'''Screen width: {SCREEN_WIDTH} 
 Screen height: {SCREEN_HEIGHT}
-        '''
+'''
         )
 
 
