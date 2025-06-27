@@ -21,6 +21,7 @@ Screen height: {SCREEN_HEIGHT}
                 pygame.quit()
                 return
         screen.fill((0, 0, 0))
+        player_object.update(delta_time)
         player_object.draw(screen)
         
         #goes at end
