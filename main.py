@@ -1,11 +1,13 @@
 import pygame
 from constants import *
+from player import *
 
 def main():
     pygame.init()
     screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
     frame_rate = pygame.time.Clock()
     delta_time = 0
+    player_object = Player(y=SCREEN_HEIGHT/2, x=SCREEN_WIDTH/2)
         
     print("Starting Asteroids!")
     print(
