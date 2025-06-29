@@ -40,7 +40,12 @@ Screen height: {SCREEN_HEIGHT}
         updateable.update(delta_time)
         for obj in drawable:
             obj.draw(screen)
-        
+        for asteroid in asteroids:
+            if player_object.collides_with(asteroid):
+                print("Game over!")
+                pygame.quit()
+                return
+             
         #goes at end
         pygame.display.flip()
         delta_time = frame_rate.tick(60) / 1000.0
