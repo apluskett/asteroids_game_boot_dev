@@ -33,8 +33,7 @@ class Player(CircleShape):
         shot = Shot(self.position.x + forward.x * self.radius, 
                     self.position.y + forward.y * self.radius)
         shot.velocity = forward * PLAYER_SHOOT_SPEED
-        # Don't return - shot auto-joins groups via Shot.containers
-        
+    
     def update(self, dt):
         keys = pygame.key.get_pressed()
 
