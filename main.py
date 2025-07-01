@@ -48,7 +48,11 @@ Screen height: {SCREEN_HEIGHT}
                 print("Game over!")
                 pygame.quit()
                 return
-             
+            for shot in shots:
+                if asteroid.collides_with(shot):
+                    asteroid.split()
+                    shot.kill()
+                    break
         #goes at end
         pygame.display.flip()
         delta_time = frame_rate.tick(60) / 1000.0
